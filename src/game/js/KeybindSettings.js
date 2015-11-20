@@ -45,6 +45,13 @@ GS.KeybindSettings = {
 			actionName: "hyperblaster",
 			controlName: "4",
 			code: 52
+			
+		},
+		{
+			actionName: "rycoblaster",
+			controlName: "5",
+			code: 53
+			
 		},
 	],
 
