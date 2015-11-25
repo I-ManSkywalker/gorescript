@@ -9,6 +9,10 @@ GS.Player = function(grid, camera, playerView) {
 	this.godEnabled = false;
 	this.flyEnabled = false;
 	this.noClipEnabled = false;
+	this.superSpeedEnabled = false;
+	this.heatVisionEnabled = false;
+	this.superStrengthEnabled = false;
+	this.invisibilityEnabled = false;
 	this.inMenu = false;
 
 	this.health = 100;
@@ -151,6 +155,38 @@ GS.Player.prototype = GS.inherit(GS.GridObject, {
 			this.godEnabled = value;
 		}
 	},
+	
+	superSpeed: function(value) {
+		if (value === undefined) {
+			this.superSpeedEnabled = !this.superSpeedEnabled;
+		} else {
+			this.superSpeedEnabled = value;
+		}
+	},
+	
+	heatVision: function(value) {
+		if (value === undefined) {
+			this.heatVisionEnabled = !this.heatVisionEnabled;
+		} else {
+			this.heatVisionEnabled = value;
+		}
+	},
+	
+	superStrength: function(value) {
+		if (value === undefined) {
+			this.superStrengthEnabled = !this.superStrengthEnabled;
+		} else {
+			this.superStrengthEnabled = value;
+		}
+	},
+	
+	invisibility: function(value) {
+		if (value === undefined) {
+			this.invisibilityEnabled = !this.invisibilityEnabled;
+		} else {
+			this.invisibilityEnabled = value;
+		}
+	},
 
 	initTriangles: function() {
 		var triangles = GS.Cube.getVertices();
@@ -198,7 +234,7 @@ GS.Player.prototype = GS.inherit(GS.GridObject, {
 	onItemCollision: function(item) {
 		var name = GS.MapEntities[item.sourceObj.type].name;
 
-		if (this.pickupWeapon(name) || this.pickupAmmo(name) || this.pickupMedkit(name)) {
+		if (this.pickupWeapon(name) || this.pickupAmmo(name) || this.pickupMedkit(name)) || this.pickupArmor(name)) {
 			this.grid.aiManager.onPlayerItemPickup(this, item);
 			item.remove();
 			this.playerView.onItemPickup();
@@ -278,6 +314,22 @@ GS.Player.prototype = GS.inherit(GS.GridObject, {
 		}
 		return false;
 	},
+	
+	pickupArmor: function(name) {
+		var that = this;
+		if (name == "armor" && this.health < 100) {
+			GS.DebugUI.addTempLine("picked up armor");
+
+			this.armor += 25;
+			if (this.armor > 100) {
+				this.armor = 100;
+			}
+
+			this.grid.soundManager.playSound("pickup_item");
+			return true;
+		}
+		return false;
+	},
 
 	updateUse: function() {
 		if (this.canUse && GS.Keybinds.use.inUse) {			
@@ -343,6 +395,9 @@ GS.Player.prototype = GS.inherit(GS.GridObject, {
 		} else
 		if (this.weaponName == "pistol") {
 			name = "hyper_blaster_fire";
+		} else
+		if (this.weaponName == "ryco_blaster") {
+			name = "shotgun_fire";
 		}
 
 		this.grid.soundManager.playSound(name);
