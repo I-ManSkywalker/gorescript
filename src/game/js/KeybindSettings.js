@@ -53,6 +53,12 @@ GS.KeybindSettings = {
 			code: 53
 			
 		},
+		{
+			actionName: "G.E.A.R.E.D. O.U.T. RIP blaster",
+			controlName: "6",
+			code: 54
+			
+		},
 	],
 
 	init: function() {
