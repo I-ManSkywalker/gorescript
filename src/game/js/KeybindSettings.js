@@ -19,6 +19,11 @@ GS.KeybindSettings = {
 			actionName: "strafeRight",
 			controlName: "D",
 			code: 68
+		},	
+		{
+			actionName: "inventory",
+			controlName: "I",
+			code: 73
 		},
 		{
 			actionName: "use",
@@ -30,6 +35,11 @@ GS.KeybindSettings = {
 			controlName: "MOUSE LEFT",
 			mouse: true,
 			button: 1
+		},
+		{
+			actionName: "hand",
+			controlName: "1",
+			code: 49
 		},
 		{
 			actionName: "pistol",
@@ -53,12 +63,7 @@ GS.KeybindSettings = {
 			code: 53
 			
 		},
-		{
-			actionName: "G.E.A.R.E.D. O.U.T. RIP blaster",
-			controlName: "6",
-			code: 54
-			
-		},
+	
 	],
 
 	init: function() {
