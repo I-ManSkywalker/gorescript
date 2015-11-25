@@ -1,4 +1,12 @@
 GS.Weapons = {
+	hand: {
+		name: "hand",
+		powerLevel: 1,
+		ammo: 0,
+		infiniteAmmo: true,
+		cooldown: 200,
+		hitscan: false,
+	},
 	pistol: {
 		name: "pistol",
 		powerLevel: 2,
@@ -32,6 +40,16 @@ GS.Weapons = {
 		ammoClip: 20,
 		bulletsPerShot: 1,
 		cooldown: 80,
+		hitscan: false,
+	},	
+	ryco_blaster: {
+		name: "rycoblaster",
+		powerLevel: 6,
+		ammo: 0,
+		ammoMax: 500,
+		ammoClip: 20,
+		bulletsPerShot: 1,
+		cooldown: 70,
 		hitscan: false,
 	},
 };
