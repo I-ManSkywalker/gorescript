@@ -6,6 +6,16 @@ GS.Player = function(grid, camera, playerView) {
 	this.playerView.player = this;
 
 	this.moveSpeed = 1.5;
+	onmoveSeepd: function(moveSpeed) {
+		if (!this.superSpeedEnabled) {
+			this.moveSpeed -= 50;
+			if (this.moveSpeed <= 50) {
+				this.moveSpeed = 50;
+				this.moveSpeed();
+			}
+			this.playerView.onDamage();
+		}
+	},
 	this.godEnabled = false;
 	this.flyEnabled = false;
 	this.noClipEnabled = false;
