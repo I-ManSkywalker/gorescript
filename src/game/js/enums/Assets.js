@@ -42,6 +42,8 @@ GS.Assets[GS.AssetTypes.Texture] = {
 	"ammo_glow": 			{ filename: "ammo_glow.png", 				type: GS.TextureTypes.Entity },
 	"medkit": 				{ filename: "medkit.png", 					type: GS.TextureTypes.Entity },
 	"medkit_glow": 			{ filename: "medkit_glow.png", 				type: GS.TextureTypes.Entity },
+	"hand":                                 { filename: "hand.png",                                         type: GS.TextureTypes.Entity },
+	"hand_glow":                    { filename: "hand_glow.png",                            type: GS.TextureTypes.Entity },
 	"pistol": 				{ filename: "pistol.png", 					type: GS.TextureTypes.Entity },
 	"pistol_glow": 			{ filename: "pistol_glow.png", 				type: GS.TextureTypes.Entity },
 	"double_shotgun": 		{ filename: "double_shotgun.png", 			type: GS.TextureTypes.Entity },
@@ -73,6 +75,7 @@ GS.Assets[GS.AssetTypes.Mesh] = {
 	"ammo": 				{ filename: "ammo.js" },
 	"medkit": 				{ filename: "medkit.js" },
 
+	"hand"                                  { filename: "hand.js"
 	"pistol": 				{ filename: "pistol.js" },
 	"double_shotgun": 		{ filename: "double_shotgun.js" },
 	"hyper_blaster": 		{ filename: "hyper_blaster.js" },
@@ -99,6 +102,17 @@ GS.Assets[GS.AssetTypes.Mesh] = {
 	"eye_death3": 			{ filename: "eye_death3.js" },
 	"eye_attack0": 			{ filename: "eye_attack0.js" },
 	"eye_attack1": 			{ filename: "eye_attack1.js" },
+	
+	"cubit_walk0": 			{ filename: "cubit_walk0.js" },
+	"cubit_walk1": 			{ filename: "cubit_walk1.js" },
+	"cubit_walk2": 			{ filename: "cubit_walk2.js" },
+	"cubit_walk3": 			{ filename: "cubit_walk3.js" },
+	"cubit_walk4": 			{ filename: "cubit_walk4.js" },
+	"cubit_walk5": 			{ filename: "cubit_walk5.js" },
+	"cubit_death0": 			{ filename: "cubit_death0.js" },
+	"cubit_death1": 			{ filename: "cubit_death1.js" },
+	"cubit_death2": 			{ filename: "cubit_death2.js" },
+	"cubit_death3": 			{ filename: "cubit_death3.js" },
 };
 
 GS.Assets[GS.AssetTypes.Sound] = {
