@@ -48,6 +48,8 @@ GS.Assets[GS.AssetTypes.Texture] = {
 	"double_shotgun_glow": 	{ filename: "double_shotgun_glow.png", 		type: GS.TextureTypes.Entity },
 	"hyper_blaster": 		{ filename: "hyper_blaster.png", 			type: GS.TextureTypes.Entity },
 	"hyper_blaster_glow": 	{ filename: "hyper_blaster_glow.png", 		type: GS.TextureTypes.Entity },
+	"ryco_blaster"                  { filename: "ryco_blaster.png",                         type: GS.TextureTypes.Entity },
+	"ryco_blaster_glow":    { filename: "ryco_blaster_glow.png"             type: GS.TextureTypes.Entity },
 	"nom": 					{ filename: "nom.png", 						type: GS.TextureTypes.Entity },
 	"nom_glow": 			{ filename: "nom_glow.png", 				type: GS.TextureTypes.Entity },
 	"eye": 					{ filename: "eye.png", 						type: GS.TextureTypes.Entity },
@@ -74,6 +76,7 @@ GS.Assets[GS.AssetTypes.Mesh] = {
 	"pistol": 				{ filename: "pistol.js" },
 	"double_shotgun": 		{ filename: "double_shotgun.js" },
 	"hyper_blaster": 		{ filename: "hyper_blaster.js" },
+	"ryco_blaster":                 { filename: "ryco_blaster.js" },
 	
 	"nom_walk0": 			{ filename: "nom_walk0.js" },
 	"nom_walk1": 			{ filename: "nom_walk1.js" },
