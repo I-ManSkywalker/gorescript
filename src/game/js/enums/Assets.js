@@ -51,7 +51,7 @@ GS.Assets[GS.AssetTypes.Texture] = {
 	"hyper_blaster": 		{ filename: "hyper_blaster.png", 			type: GS.TextureTypes.Entity },
 	"hyper_blaster_glow": 	{ filename: "hyper_blaster_glow.png", 		type: GS.TextureTypes.Entity },
 	"ryco_blaster"                  { filename: "ryco_blaster.png",                         type: GS.TextureTypes.Entity },
-	"ryco_blaster_glow":    { filename: "ryco_blaster_glow.png"             type: GS.TextureTypes.Entity },
+	"ryco_blaster_glow":    { filename: "hyper_blaster_glow.png"             type: GS.TextureTypes.Entity },
 	"nom": 					{ filename: "nom.png", 						type: GS.TextureTypes.Entity },
 	"nom_glow": 			{ filename: "nom_glow.png", 				type: GS.TextureTypes.Entity },
 	"eye": 					{ filename: "eye.png", 						type: GS.TextureTypes.Entity },
