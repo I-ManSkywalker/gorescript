@@ -149,6 +149,8 @@ GS.AIManager.prototype = {
 		}
 
 		this.wakeUpNearbyMonsters(player);
+		(if (!this.invisibilityEnabled) {
+			this.checkZones(player, oldPos, oldPos);
 		this.applyRegionVisibility(player);
 	},
 
