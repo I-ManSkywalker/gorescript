@@ -88,6 +88,20 @@ GS.Player.prototype = GS.inherit(GS.GridObject, {
 		this.weapon = this.availableWeapons.pistol;
 		this.weaponName = "pistol";
 		this.playerView.changeToWeaponInstant("pistol");
+		
+	};
+		
+	
+		};
+		
+		that.availableWeapons.hand.pickedUp = true;
+		that.availableWeapons.hand.cooldownRemaining = 0;
+
+		this.weapon = this.availableWeapons.hand;
+		this.weaponName = "hand";
+		this.playerView.changeToWeaponInstant("hand");
+		
+		
 	},
 
 	getPersistencePackage: function() {
