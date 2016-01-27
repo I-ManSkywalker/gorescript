@@ -149,13 +149,27 @@ GS.AIManager.prototype = {
 		}
 
 		this.wakeUpNearbyMonsters(player);
-		(if (!this.invisibilityEnabled) {
-			this.checkZones(player, oldPos, oldPos);
+		if (!this.invisibilityEnabled) {
+			this.wakeUpNearbyMonsters(player) -= false;
+			if (this.wakeUpNearbyMonsters(player) <= false) {
+				this.wakeUpNearbyMonsters(player) = false;
+				this.wakeUpNearbyMonsters(player);
+		
 		this.applyRegionVisibility(player);
+		if (!this.invisibilityEnabled) {
+			this.applyRegionVisibility(player) -= false;
+			if (this.applyRegionVisibility(player) <= false) {
+				this.applyRegionVisibility(player) = false;
+				this.applyRegionVisibility(player);
 	},
 
 	onPlayerShoot: function(player) {
 		this.activateNearbyMonsters(player);
+		if (!this.invisibilityEnabled) {
+			this.wakeUpNearbyMonsters(player) -= false;
+			if (this.wakeUpNearbyMonsters(player) <= false) {
+				this.wakeUpNearbyMonsters(player) = false;
+				this.wakeUpNearbyMonsters(player);
 	},
 
 	onPlayerOpenDoor: function(door) {
