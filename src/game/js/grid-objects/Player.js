@@ -341,12 +341,12 @@ GS.Player.prototype = GS.inherit(GS.GridObject, {
 	
 	pickupArmor: function(name) {
 		var that = this;
-		if (name == "armor" && this.health < 100) {
+		if (name == "armor" && this.health < 200) {
 			GS.DebugUI.addTempLine("picked up armor");
 
-			this.armor += 25;
-			if (this.armor > 100) {
-				this.armor = 100;
+			this.health += 25;
+			if (this.health > 100) {
+				this.health = 125;
 			}
 
 			this.grid.soundManager.playSound("pickup_item");
