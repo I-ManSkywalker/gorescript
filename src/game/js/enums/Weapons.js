@@ -52,4 +52,15 @@ GS.Weapons = {
 		cooldown: 70,
 		hitscan: false,
 	},
+	heat_vision: {
+		name: "Heat Vision",
+		powerLevel: 6,
+		ammo: 0,
+		infiniteAmmo: true,
+		cooldown: 0,
+		hitscan: true,
+		spread: {
+			shots: 2,
+			angleOffset: 5,
+	},
 };
