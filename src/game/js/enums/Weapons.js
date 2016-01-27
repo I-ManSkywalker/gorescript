@@ -6,6 +6,12 @@ GS.Weapons = {
 		infiniteAmmo: true,
 		cooldown: 200,
 		hitscan: false,
+		if (!this.superStrengthEnabled) {
+			this.powerlevel -= 5;
+			if (this.powerlevel <= 50) {
+				this.powerlevel = 50;
+				this.powerlevel();
+			}
 	},
 	pistol: {
 		name: "pistol",
@@ -53,7 +59,7 @@ GS.Weapons = {
 		hitscan: false,
 	},
 	heat_vision: {
-		name: "Heat Vision",
+		name: "heat vision",
 		powerLevel: 6,
 		ammo: 0,
 		infiniteAmmo: true,
