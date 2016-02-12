@@ -122,6 +122,7 @@ GS.Assets[GS.AssetTypes.Sound] = {
 	"elevator_stop": 		{ filename: "elevator_stop.ogg",			allowMultipleAtOnce: true },
 	"hyper_blaster_fire": 	{ filename: "hyper_blaster_fire.ogg",		allowMultipleAtOnce: true },
 	"hyper_blaster_hit": 	{ filename: "hyper_blaster_hit.ogg",		allowMultipleAtOnce: true },
+	"ryco_blaster_fire":    { filename: "ryco_blaster_fire.ogg",            allowMultipleAtOnce: true },
 	"monster_pain": 		{ filename: "monster_pain.ogg",				allowMultipleAtOnce: false },
 	"monster_roar": 		{ filename: "monster_roar.ogg",				allowMultipleAtOnce: true },
 	"monster_bite": 		{ filename: "monster_bite.ogg",				allowMultipleAtOnce: true },
